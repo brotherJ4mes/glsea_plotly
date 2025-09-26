@@ -1,0 +1,300 @@
+=====================================================
+============    09-25 17:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 267
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-25 18:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 267
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-25 19:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 267
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-25 20:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 267
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-25 21:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 267
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-25 22:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 267
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-25 23:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 267
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 00:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+Traceback (most recent call last):
+  File "/home/kessler/plot_gen/contour_glsea/./contour.py", line 22, in <module>
+    lst_gl = np.matrix(pd.read_table(fin, skiprows=6, sep='\s+', header=None))
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1403, in read_table
+    return _read(filepath_or_buffer, kwds)
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 618, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1618, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1878, in _make_engine
+    self.handles = get_handle(
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/cwdata/p/m/lcd//2025/09/2025_268_glsea.asc'
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 01:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+Traceback (most recent call last):
+  File "/home/kessler/plot_gen/contour_glsea/./contour.py", line 22, in <module>
+    lst_gl = np.matrix(pd.read_table(fin, skiprows=6, sep='\s+', header=None))
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1403, in read_table
+    return _read(filepath_or_buffer, kwds)
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 618, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1618, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1878, in _make_engine
+    self.handles = get_handle(
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/cwdata/p/m/lcd//2025/09/2025_268_glsea.asc'
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 02:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+Traceback (most recent call last):
+  File "/home/kessler/plot_gen/contour_glsea/./contour.py", line 22, in <module>
+    lst_gl = np.matrix(pd.read_table(fin, skiprows=6, sep='\s+', header=None))
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1403, in read_table
+    return _read(filepath_or_buffer, kwds)
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 618, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1618, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/parsers/readers.py", line 1878, in _make_engine
+    self.handles = get_handle(
+  File "/usr/local/lib64/python3.9/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/cwdata/p/m/lcd//2025/09/2025_268_glsea.asc'
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 03:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 04:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 05:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 06:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 07:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 08:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 09:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 10:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 11:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 12:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0
+=====================================================
+============    09-26 13:05    ======================
+=====================================================
+no file for today... using yesterdays date
+executing ./contour.py 2025 09 268
+plotting sup...
+plotting mic...
+plotting hur...
+plotting eri...
+plotting ont...
+quietly pushing to husky... (0 => success)
+0
+0

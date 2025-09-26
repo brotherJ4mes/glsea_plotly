@@ -77,12 +77,12 @@ def draw_plt(lst, lons, lon_sel, lats, lat_sel, lk): #{{{
 #{{{ buttons
     contours_res_button = list([
         dict(
-            args=[{"ncontours": 20}],
+            args=[{"ncontours": 10}],
             label="Few Contours",
             method="restyle"
         ),
         dict(
-            args=[{"ncontours": 50}],
+            args=[{"ncontours": 30}],
             label="Medium Contours",
             method="restyle"
         ),
