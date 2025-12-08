@@ -140,7 +140,7 @@ def draw_plt(lst, lons, lon_sel, lats, lat_sel, lk): #{{{
                 pad={"r": 10, "t": 10},
                 x=1.0,
                 xanchor="right",
-                y=.92,
+                y=.90,
                 yanchor="top"
                 ),
             dict(
@@ -150,7 +150,7 @@ def draw_plt(lst, lons, lon_sel, lats, lat_sel, lk): #{{{
                 pad={"r": 10, "t": 10},
                 x=1.0,
                 xanchor="right",
-                y=.88,
+                y=.84,
                 yanchor="top"
                 ),
             ])
@@ -159,29 +159,35 @@ def draw_plt(lst, lons, lon_sel, lats, lat_sel, lk): #{{{
 #}}}
 
 
-##{{{ begin annotations
-#    fig.add_annotation( 
-#                   text=val_date.strftime('Valid %b-%d %Y'),
-#                   x=1.0, 
-#                   y=1.0, 
-#                   xanchor="right",
-#                   yanchor="top",
-#                   showarrow=False,
-#                   font=dict(size=24, color='#0085CA'),
-#                   #borderpad=6,
-#                   )
-#
-#    fig.add_annotation(
-#                   text='NOAA CoastWatch <br> Great Lakes Environmental Research Lab ',
-#                   x=1.0, 
-#                   y=0.025,
-#                   xanchor="right",
-#                   yanchor="bottom",
-#                   showarrow=False,
-#                   font=dict(size=24, color='#0085CA'),
-#                   #borderpad=6,
-#                   align='right',
-#                   )
+#{{{ begin annotations
+    fig.add_annotation( 
+                   text=val_date.strftime('Valid %b-%d %Y'),
+                   xref='paper',
+                   yref='paper',
+                   x=1.0, 
+                   y=1.0, 
+                   xanchor="right",
+                   yanchor="top",
+                   showarrow=False,
+                   #font=dict(size=24, color='#0085CA'),
+                   font=dict(size=24, color='black'),
+                   borderpad=6,
+                   )
+
+    fig.add_annotation(
+                   text='NOAA CoastWatch <br> Great Lakes Environmental Research Lab ',
+                   xref='paper',
+                   yref='paper',
+                   x=1.0, 
+                   y=0.025,
+                   xanchor="right",
+                   yanchor="bottom",
+                   showarrow=False,
+                   #font=dict(size=24, color='#0085CA'),
+                   font=dict(size=24, color='black'),
+                   borderpad=6,
+                   align='right',
+                   )
 
 #}}}
 

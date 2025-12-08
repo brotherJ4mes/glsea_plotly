@@ -98,11 +98,6 @@ cmap_buttons = list([
                     method="restyle"
                 ),
                 dict(
-                    args=["colorscale", "Blackbody"],
-                    label="Blackbody",
-                    method="restyle"
-                ),
-                dict(
                     args=["colorscale", "Blues"],
                     label="Blues",
                     method="restyle"
