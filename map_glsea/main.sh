@@ -24,7 +24,7 @@ echo executing ./choro.py $yyyy $mm $jjj
 echo 'quietly pushing to husky... (0 => success)'
 scp -q map_choro.json husky:/hump/glcfs/coastwatch_hack/
 echo $?
-#scp -q map_choro.html husky:/hump/WAF/data/glsea_maps/
+scp -q map_choro.html husky:/hump/WAF/data/glsea_maps/
 #echo $?
 
 #scp map_choro.png  /mnt/cwdata/webdata/glsea # doesn't update

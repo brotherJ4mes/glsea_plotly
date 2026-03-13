@@ -11,7 +11,8 @@ yyyy     = sys.argv[1]
 mm       = sys.argv[2]
 jjj      = sys.argv[3]
 
-fin = f'{base_dir}/{yyyy}/{mm}/{yyyy}_{jjj}_glsea.dat'
+#fin = f'{base_dir}/{yyyy}/{mm}/{yyyy}_{jjj}_glsea.dat'
+fin = f'{base_dir}/{yyyy}/{mm}/{yyyy}_{jjj}_glsea_i.dat'
 
 
 #[yr, jd] = re.findall('\d+', os.path.basename(fin))
@@ -33,7 +34,7 @@ lst['lst_F'] = lst['lst_C']*9/5+32
 
 ll = pd.read_table('lat_lon.dat', sep='\s+')
 lst = pd.concat([lst, ll], axis=1)
-lst['lon'] = -lst['lon']
+lst['lon'] = -lst['lon'
 
 fig = go.Figure(go.Choroplethmap(geojson=geodat,
                         locations=lst['id'], z=lst['lst_F'],
