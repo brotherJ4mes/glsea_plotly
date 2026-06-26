@@ -6,13 +6,14 @@ import plotly.graph_objects as go
 from datetime import datetime
 
 
-base_dir = '/mnt/cwdata/p/m/lcd/'
-yyyy     = sys.argv[1]
-mm       = sys.argv[2]
-jjj      = sys.argv[3]
+#base_dir = '/mnt/cwdata/p/m/lcd/'
+yyyy     = '2026'
+mm       = '06'
+jjj      = '158'
 
 #fin = f'{base_dir}/{yyyy}/{mm}/{yyyy}_{jjj}_glsea.dat'
-fin = f'{base_dir}/{yyyy}/{mm}/{yyyy}_{jjj}_glsea_i.dat'
+#fin = f'{base_dir}/{yyyy}/{mm}/{yyyy}_{jjj}_glsea_i.dat'
+fin = '2026_158_glsea.dat'
 
 
 #[yr, jd] = re.findall('\d+', os.path.basename(fin))
@@ -34,7 +35,7 @@ lst['lst_F'] = lst['lst_C']*9/5+32
 
 ll = pd.read_table('lat_lon.dat', sep='\s+')
 lst = pd.concat([lst, ll], axis=1)
-lst['lon'] = -lst['lon'
+lst['lon'] = -lst['lon']
 
 fig = go.Figure(go.Choroplethmap(geojson=geodat,
                         locations=lst['id'], z=lst['lst_F'],
