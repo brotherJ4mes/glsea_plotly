@@ -1,4 +1,5 @@
-#!/usr/bin/python3.11
+#!/usr/bin/python3
+####!/usr/bin/python3.11
 import json
 import geopandas as gpd
 import pandas as pd
@@ -7,8 +8,8 @@ import numpy as np
 import plotly.express as px
 
 #   - [ ] go back to KMZ (already spherical, cleaner)
-#   - [ ] fix name issue
-#   - [ ] fix coordinate issue
+#   - [x] fix name issue
+#   - [!] fix coordinate issue (NOT POSSIBLE)
 
 
 # 1. Load the shapefile
@@ -34,25 +35,26 @@ geodat = json.loads(gdf.geometry.to_json())
 
 ct_dict = {        
 #ct_dict = {"00":"0", 
-           "20":"20",
-           "30":"30",
-           "50":"50",
-           "60":"60",
-           "70":"70",
-           "80":"80",
-           "90":"90",
-           "91":"95",
-           "92":"100",
+           "20":"20%",
+           "30":"30%",
+           "50":"50%",
+           "60":"60%",
+           "70":"70%",
+           "80":"80%",
+           "90":"90%",
+           "91":"95%",
+           "92":"100%",
            }
 
 
-sa_dict_mm = {"0":0, 
-            "81":10,
-            "84":50,
-            "85":150,
-            "87":300,
-            "91":700,
+sa_dict_mm = {"0":"0 mm", 
+             "81":"10 mm",
+             "84":"50 mm",
+             "85":"150 mm",
+             "87":"300 mm",
+             "91":"700 mm",
            }
+
 
 fa_dict = {
     '01': 'small ice cake, brash ice',
@@ -75,19 +77,18 @@ ice['thickness'] = ice['SA'].map(sa_dict_mm)
 ice['form'] = ice['FA'].map(fa_dict)
 
 
+hover_temp = {'id': False, 'cover': True , 'thickness': True, 'form': True} # use this for hover_data in main call
 #https://plotly.com/python/tile-county-choropleth/
 fig = px.choropleth_map(
     ice, geojson=geodat, locations='id', color='cover',
                            color_discrete_sequence=mako_palette,
-    custom_data=['cover','thickness','form'],
+#    custom_data=['cover','thickness','form'],
+    hover_data = hover_temp,
     #center={"lat": center_lat, "lon": center_lon},
     map_style="light"
 )
 
-
-hover_temp = 'cover: %{customdata[0]}% <br> thickness: %{customdata[1]} mm <br> form: %{customdata[2]}'
-fig.update_traces(hovertemplate=hover_temp)
-#fig.update_traces({'name': ''})
+#hover_temp = 'cover: %{customdata[0]}% <br> thickness: %{customdata[1]} mm <br> form: %{customdata[2]}'
 print("Generating map layers...")
 
 fig.update_layout(
@@ -155,7 +156,7 @@ fig.update_layout(
 
 
 fig.write_html('ice_choro.html')
-fig.write_json('ice_choro.json')
+#fig.write_json('ice_choro.json')
 
 
 
