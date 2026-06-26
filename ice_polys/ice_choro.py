@@ -155,6 +155,7 @@ fig.update_layout(
 
 
 fig.write_html('ice_choro.html')
+fig.write_json('ice_choro.json')
 
 
 
